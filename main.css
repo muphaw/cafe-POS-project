@@ -1,0 +1,22 @@
+  /* Custom media query to collapse below 414px */
+  @media (max-width: 375px) {
+    .navbar-collapse {
+        display: none !important;  /* Initially hidden */
+    }
+    .navbar-toggler {
+        display: block !important; /* Show burger icon */
+    }
+    .navbar-collapse.show {
+        display: block !important; /* Show navbar when toggled */
+    }
+}
+
+/* Show navbar normally above 414px */
+@media (min-width: 376px) {
+    .navbar-collapse {
+        display: flex !important; /* Show navbar as a horizontal menu */
+    }
+    .navbar-toggler {
+        display: none !important; /* Hide burger icon */
+    }
+}
