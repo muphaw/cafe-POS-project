@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+</head>
+<body class="">
+   <!-- Offcanvas -->
+   <div class=" w-100 p-2 d-flex flex-column align-items-center">
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel" style="background-color: #ebe6d6;opacity: 0.9;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkLabel">Menu</h5>
+            <button type="button" class="btn-close btn-brown" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav flex-column align-items-center   ">
+                <li class="nav-item py-1 w-100">
+                    <a class="btn btn-brown px-2 px-xxl-7 px-xl-6 px-lg-5 px-md-4 px-sm-3   w-100 btn-md nav-link" data-bs-dismiss="offcanvas" aria-current="page" role="button" onclick="loadPage('dashboard')" >Dashboard</a>
+                </li>
+                <li class="nav-item py-1 w-100">
+                    <a class="btn btn-brown px-2 px-xxl-7 px-xl-6 px-lg-5 px-md-4 px-sm-3   w-100 btn-md nav-link" data-bs-dismiss="offcanvas" aria-current="page" role="button" onclick="loadPage('orders')">Orders</a>
+                </li>
+                <li class="nav-item py-1 w-100">
+                    <a class="btn btn-brown px-2 px-xxl-7 px-xl-6 px-lg-5 px-md-4 px-sm-3   w-100 btn-md nav-link" data-bs-dismiss="offcanvas" aria-current="page" role="button" onclick="loadPage('menu')">Menu</a>
+                </li>
+                <li class="nav-item py-1 w-100">
+                    <a class="btn btn-brown px-2 px-xxl-7 px-xl-6 px-lg-5 px-md-4 px-sm-3   w-100 btn-md nav-link" data-bs-dismiss="offcanvas" aria-current="page" role="button" onclick="loadPage('tables')">Tables</a>
+                </li>
+                <li class="nav-item py-1 w-100">
+                    <a class="btn btn-brown px-2 px-xxl-7 px-xl-6 px-lg-5 px-md-4 px-sm-3   w-100 btn-md nav-link" data-bs-dismiss="offcanvas" aria-current="page" role="button" onclick="loadPage('profile')">Profile</a>
+                </li>
+            </ul> 
+        </div>
+    </div>
+    <div class="">
+      <h2 class=" text-black">Navbar</h2>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary  p-0">
+        <!-- Flex Column Layout: Ensures everything is stacked vertically -->
+         
+        <div class="" >
+            <!-- Button to toggle offcanvas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDark" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Flex Column for the Navbar Content -->
+            <div class="collapse navbar-collapse w-100 bg-default-color"   id="navbarNav">
+                 <ul class="navbar-nav d-flex flex-column " style="padding-top: 52px;" >
+                  <li class="nav-item py-2 w-100">
+                      <a class="btn btn-brown px-2 px-xxl-7 px-xl-6 px-lg-5 px-md-4 px-sm-3   w-100 btn-md nav-link" aria-current="page" role="button" onclick="loadPage('dashboard')" >Dashboard</a>
+                  </li>
+                  <li class="nav-item py-2 w-100">
+                      <a class="btn btn-brown px-2 px-xxl-7 px-xl-6 px-lg-5 px-md-4 px-sm-3   w-100 btn-md nav-link"  role="button" onclick="loadPage('orders')">Orders</a>
+                  </li>
+                  <li class="nav-item py-2 w-100">
+                      <a class="btn btn-brown px-2 px-xxl-7 px-xl-6 px-lg-5 px-md-4 px-sm-3   w-100 btn-md nav-link" aria-current="page" role="button" onclick="loadPage('menu')">Menu</a>
+                  </li>
+                  <li class="nav-item py-2 w-100">
+                      <a class="btn btn-brown px-2 px-xxl-7 px-xl-6 px-lg-5 px-md-4 px-sm-3   w-100 btn-md nav-link" aria-current="page" role="button" onclick="loadPage('tables')">Tables</a>
+                  </li>
+                  <li class="nav-item py-2 w-100">
+                      <a class="btn btn-brown px-2 px-xxl-7 px-xl-6 px-lg-5 px-md-4 px-sm-3   w-100 btn-md nav-link" aria-current="page" role="button" onclick="loadPage('profile')">Profile</a>
+                  </li>
+              </ul> 
+              <img src="" alt="">
+            </div>
+        </div>
+    </nav>
+    </div>
+</body>
+</html>

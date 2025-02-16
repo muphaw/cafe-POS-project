@@ -1,53 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="profile.css">
-    <title>Profile</title>
-</head>
-<body>
-    <!-- Include the navbar -->
-    <div id="navbar-container"></div>
+  /* Custom media query to collapse below 414px */
+  @media (max-width: 375px) {
+    .navbar-collapse {
+        display: none !important;  /* Initially hidden */
+    }
+    .navbar-toggler {
+        display: block !important; /* Show burger icon */
+    }
+    .navbar-collapse.show {
+        display: block !important; /* Show navbar when toggled */
+    }
+}
 
-    <!-- Profile Content -->
-     
-    <div class="profile-wrapper">
-        <div class="profile-container">
-            <div class="profile-header">
-                <h1>Profile</h1>
-                <p>Welcome to your coffee journey!</p>
-            </div>
-            <div class="profile-content">
-                <div class="profile-picture">
-                    <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
-                    <div class="profile-overlay"></div>
-                </div>
-                <div class="profile-info">
-                    <h2>EMPLOYER</h2>
-                    <p><strong>Email:</strong> coffee@example.com</p>
-                    <p><strong>Role:</strong> Manager</p>
-                    <p><strong>Joined:</strong> January 2022</p>
-                </div>
-                <div class="profile-actions">
-                    <button class="button">Edit Profile</button>
-                    <button class="button">Change Password</button>
-                </div>
-            </div>
-        </div>
-    </div>
+/* Show navbar normally above 414px */
+@media (min-width: 376px) {
+    .navbar-collapse {
+        display: flex !important; /* Show navbar as a horizontal menu */
+    }
+    .navbar-toggler {
+        display: none !important; /* Hide burger icon */
+    }
+}
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Load navbar -->
-    <script>
-        // Load navbar.html into the navbar-container
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
-            });
-    </script>
-</body>
-</html>
+.bg-default-color {
+    background-color: #f7f5ef;
+    
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02); /* Makes the card slightly larger */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+}
+
+:root {
+    --bd-brown-bg: #ebe6d6; /* brown color */
+    --bd-hover-bg: #d9ccaf; /* Hover color */
+    --bd-active-bg: #c3ad81; /* Active color */
+    --bd-disabled-bg: #ebe6d6; /* Disabled color */
+    --bs-brown: #2f1f19; /* brown color for text */
+
+    --bd-outline-hover-bg: #8b6743;
+    --bd-outline-active-bg: #6f4e37;
+
+    --bd-solid-brown-bg: #a37f4f; /* brown solid color */
+    --bd-solid-hover-bg: #8b6743; /* Hover color */
+    --bd-solid-active-bg: #6f4e37; /* Active color */
+    --bd-solid-disabled-bg: #ebe6d6; /* Disabled color */
+    --bs-solid-brown: #ffffff; /* brown color for text */
+
+    
+}
+
+/* Custom Button Styles using CSS Variables */
+.btn-brown {
+    /* --bs-btn-font-weight: 600; */
+    --bs-btn-color: var(--bs-brown); /* Text color */
+    --bs-btn-bg: var(--bd-brown-bg); /* brown color */
+    --bs-btn-border-color: var(--bd-brown-bg); /* Border color */
+    --bs-btn-hover-color: var(--bs-brown); /* Hover text color */
+    --bs-btn-hover-bg: var(--bd-hover-bg); /* Hover background */
+    --bs-btn-hover-border-color: var(--bd-hover-bg); /* Hover border */
+    --bs-btn-focus-shadow-rgb: 255, 255, 255; /* Focus shadow color */
+    --bs-btn-active-color: var(--bs-btn-hover-color); /* Active text color */
+    --bs-btn-active-bg: var(--bd-active-bg); /* Active background */
+    --bs-btn-active-border-color: var(--bd-active-bg); /* Active border */
+}
+.btn-outline-brown{
+    /* --bs-btn-borderfont-weight: 600; */
+    --bs-btn-color: var(--bs-brown); /* Text color */
+    /* --bs-btn-bg: var(--bd-brown-bg); brown color */
+    --bs-btn-border-color: var(--bs-brown); /* Border color */
+    --bs-btn-hover-color: var(--bs-solid-brown); /* Hover text color */
+    --bs-btn-hover-bg: var(--bd-outline-hover-bg); /* Hover background */
+    --bs-btn-hover-border-color: var(--bd-outline-hover-bg); /* Hover border */
+    --bs-btn-focus-shadow-rgb: 255, 255, 255; /* Focus shadow color */
+    --bs-btn-active-color: var(--bs-btn-hover-color); /* Active text color */
+    --bs-btn-active-bg: var(--bd-outline-active-bg); /* Active background */
+    --bs-btn-active-border-color: var(--bd-outline-active-bg); /* Active border */
+}
+
+.btn-solid-brown {
+    /* --bs-btn-font-weight: 600; */
+    --bs-btn-color: var(--bs-solid-brown); /* Text color */
+    --bs-btn-bg: var(--bd-solid-brown-bg); /* brown color */
+    --bs-btn-border-color: var(--bd-solid-brown-bg); /* Border color */
+    --bs-btn-hover-color: var(--bs-solid-brown); /* Hover text color */
+    --bs-btn-hover-bg: var(--bd-solid-hover-bg); /* Hover background */
+    --bs-btn-hover-border-color: var(--bd-solid-hover-bg); /* Hover border */
+    --bs-btn-focus-shadow-rgb: 255, 255, 255; /* Focus shadow color */
+    --bs-btn-active-color: var(--bs-solid-brown); /* Active text color */
+    --bs-btn-active-bg: var(--bd-solid-active-bg); /* Active background */
+    --bs-btn-active-border-color: var(--bd-solid-active-bg); /* Active border */
+}
+/* Disabled Button */
+.btn-brown:disabled {
+    --bs-btn-bg: var(--bd-disabled-bg); /* Disabled background */
+    --bs-btn-border-color: var(--bd-disabled-bg); /* Disabled border */
+    --bs-btn-color: #6c757d; /* Disabled text color */
+}
