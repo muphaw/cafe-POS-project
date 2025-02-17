@@ -39,7 +39,7 @@
 :root {
     --bd-brown-bg: #ebe6d6; /* brown color */
     --bd-hover-bg: #d9ccaf; /* Hover color */
-    --bd-active-bg: #c3ad81; /* Active color */
+    --bd-active-bg: #f3f3f3; /* Active color */
     --bd-disabled-bg: #ebe6d6; /* Disabled color */
     --bs-brown: #2f1f19; /* brown color for text */
 
@@ -101,4 +101,214 @@
     --bs-btn-bg: var(--bd-disabled-bg); /* Disabled background */
     --bs-btn-border-color: var(--bd-disabled-bg); /* Disabled border */
     --bs-btn-color: #6c757d; /* Disabled text color */
+}
+
+
+/* ------ profile.css ------ */
+/* ------ profile.css ------ */
+* {
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure both html and body take up the full viewport height */
+}
+
+/* Full Height Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically align content */
+    min-height: 100vh; /* Ensure it takes full screen height */
+}
+
+/* Profile Wrapper - Full Screen */
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+/* Profile Container - Full Width and Height */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Adjust padding for a spacious look */
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+/* Profile Header */
+.profile-header h1 {
+    color: #4b3621;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.profile-header p {
+    font-size: 18px;
+    color: #6b4f3a;
+    margin-bottom: 30px;
+}
+
+/* Profile Picture */
+.profile-picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #d2b48c;
+}
+
+/* Profile Info */
+.profile-info h2 {
+    margin: 0;
+    font-size: 32px;
+    color: #4b3621;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #6b4f3a;
+}
+
+/* Profile Actions */
+.profile-actions {
+    margin-top: 30px;
+}
+
+.profile-actions .button {
+    all: unset;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer;
+    background: radial-gradient(
+        ellipse at bottom,
+        rgba(111, 78, 55, 1) 0%,
+        rgba(78, 52, 36, 1) 45%
+    );
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.profile-actions .button:hover {
+    transform: scale(1.05) translateY(-2px);
+    color: #fff;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 100%;
+        min-width: auto;
+    }
+    .profile-header h1 {
+        font-size: 28px;
+    }
+    .profile-info h2 {
+        font-size: 28px;
+    }
+    .profile-info p {
+        font-size: 18px;
+    }
+}
+
+/*------------------------------------------------------------*/
+
+
+/* ------tables.css------ */
+
+body {
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything inside */
+}
+
+h1 {
+    color: #6d5353;
+    font-weight: bold;
+    text-align: center; /* Ensures text itself is centered */
+    margin-top: 50px; /* Adds spacing above */
+    margin-bottom: 40px; /* Adds spacing below */
+}
+
+.tables-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(3, auto);   /* 3 rows */
+    grid-gap: 15px;
+    width: 80vw;  /* Adjust width to avoid excessive size */
+    max-width: 600px; /* Limit max width */
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+
+.table {
+    width: 375px;  /* Fixed width */
+    height: 160px; /* Fixed height */
+    background-color: #705b4b;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.table:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.table.occupied {
+    background-color: #ff6b6b;
+}
+
+.table.available {
+    background-color: #6bff6b;
 }
