@@ -22,7 +22,7 @@
 }
 
 .bg-default-color {
-    background-color: #f7f5ef;
+    background-color: #FDFEFE;
     
 }
 
@@ -37,278 +37,73 @@
 }
 
 :root {
-    --bd-brown-bg: #ebe6d6; /* brown color */
-    --bd-hover-bg: #d9ccaf; /* Hover color */
-    --bd-active-bg: #f3f3f3; /* Active color */
+    --bd-brown-bg: #9f9573; /* brown color */
+    --bd-hover-bg: #7a673d; /* Hover color */
+    --bd-active-bg: #534633; /* Active color */
     --bd-disabled-bg: #ebe6d6; /* Disabled color */
-    --bs-brown: #2f1f19; /* brown color for text */
+    --bs-brown: #fcfcfc;  /* brown color for text */
 
-    --bd-outline-hover-bg: #8b6743;
-    --bd-outline-active-bg: #6f4e37;
-
-    --bd-solid-brown-bg: #a37f4f; /* brown solid color */
-    --bd-solid-hover-bg: #8b6743; /* Hover color */
-    --bd-solid-active-bg: #6f4e37; /* Active color */
+    --bd-solid-brown-bg: #ebe6d6; /* brown color */
+    --bd-solid-hover-bg: #d9ccaf; /* Hover color */
+    --bd-solid-active-bg: #f3f3f3; /* Active color */
     --bd-solid-disabled-bg: #ebe6d6; /* Disabled color */
-    --bs-solid-brown: #ffffff; /* brown color for text */
+    --bs-solid-brown: #2f1f19; /* brown color for text */
 
-    
+    --bd-outline-brown-bg: #ebe6d6; /* brown color */
+    --bd-outline-hover-bg: #d9ccaf; /* Hover color */
+    --bd-outline-active-bg: #f3f3f3; /* Active color */
+    --bd-outline-disabled-bg: #ebe6d6; /* Disabled color */
+    --bs-outline-brown: #2f1f19; /* brown color for text */
 }
+
 
 /* Custom Button Styles using CSS Variables */
 .btn-brown {
-    /* --bs-btn-font-weight: 600; */
-    --bs-btn-color: var(--bs-brown); /* Text color */
-    --bs-btn-bg: var(--bd-brown-bg); /* brown color */
-    --bs-btn-border-color: var(--bd-brown-bg); /* Border color */
-    --bs-btn-hover-color: var(--bs-brown); /* Hover text color */
-    --bs-btn-hover-bg: var(--bd-hover-bg); /* Hover background */
-    --bs-btn-hover-border-color: var(--bd-hover-bg); /* Hover border */
+    --bs-btn-hover-bg: var(--bd-hover-bg); // Hover background
+    --bs-btn-hover-border-color: var(--bd-hover-bg); // Hover border
     --bs-btn-focus-shadow-rgb: 255, 255, 255; /* Focus shadow color */
-    --bs-btn-active-color: var(--bs-btn-hover-color); /* Active text color */
+    --bs-btn-active-color: var(--bs-brown); /* Active text color */
     --bs-btn-active-bg: var(--bd-active-bg); /* Active background */
     --bs-btn-active-border-color: var(--bd-active-bg); /* Active border */
 }
-.btn-outline-brown{
-    /* --bs-btn-borderfont-weight: 600; */
-    --bs-btn-color: var(--bs-brown); /* Text color */
-    /* --bs-btn-bg: var(--bd-brown-bg); brown color */
-    --bs-btn-border-color: var(--bs-brown); /* Border color */
-    --bs-btn-hover-color: var(--bs-solid-brown); /* Hover text color */
-    --bs-btn-hover-bg: var(--bd-outline-hover-bg); /* Hover background */
-    --bs-btn-hover-border-color: var(--bd-outline-hover-bg); /* Hover border */
-    --bs-btn-focus-shadow-rgb: 255, 255, 255; /* Focus shadow color */
-    --bs-btn-active-color: var(--bs-btn-hover-color); /* Active text color */
-    --bs-btn-active-bg: var(--bd-outline-active-bg); /* Active background */
-    --bs-btn-active-border-color: var(--bd-outline-active-bg); /* Active border */
-}
-
-.btn-solid-brown {
-    /* --bs-btn-font-weight: 600; */
-    --bs-btn-color: var(--bs-solid-brown); /* Text color */
-    --bs-btn-bg: var(--bd-solid-brown-bg); /* brown color */
-    --bs-btn-border-color: var(--bd-solid-brown-bg); /* Border color */
-    --bs-btn-hover-color: var(--bs-solid-brown); /* Hover text color */
-    --bs-btn-hover-bg: var(--bd-solid-hover-bg); /* Hover background */
-    --bs-btn-hover-border-color: var(--bd-solid-hover-bg); /* Hover border */
-    --bs-btn-focus-shadow-rgb: 255, 255, 255; /* Focus shadow color */
-    --bs-btn-active-color: var(--bs-solid-brown); /* Active text color */
-    --bs-btn-active-bg: var(--bd-solid-active-bg); /* Active background */
-    --bs-btn-active-border-color: var(--bd-solid-active-bg); /* Active border */
-}
-/* Disabled Button */
-.btn-brown:disabled {
-    --bs-btn-bg: var(--bd-disabled-bg); /* Disabled background */
-    --bs-btn-border-color: var(--bd-disabled-bg); /* Disabled border */
-    --bs-btn-color: #6c757d; /* Disabled text color */
-}
 
 
-/* ------ profile.css ------ */
-/* ------ profile.css ------ */
-* {
-    box-sizing: border-box; /* Ensure padding and border are included in width/height */
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Ensure both html and body take up the full viewport height */
-}
-
-/* Full Height Body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Vertically align content */
-    min-height: 100vh; /* Ensure it takes full screen height */
-}
-
-/* Profile Wrapper - Full Screen */
-.profile-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 20px;
-}
-
-/* Profile Container - Full Width and Height */
-.profile-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px; /* Adjust padding for a spacious look */
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-}
-
-/* Profile Header */
-.profile-header h1 {
-    color: #4b3621;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.profile-header p {
-    font-size: 18px;
-    color: #6b4f3a;
-    margin-bottom: 30px;
-}
-
-/* Profile Picture */
-.profile-picture {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.profile-picture img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 5px solid #d2b48c;
-}
-
-/* Profile Info */
-.profile-info h2 {
-    margin: 0;
-    font-size: 32px;
-    color: #4b3621;
-    margin-bottom: 10px;
-}
-
-.profile-info p {
-    margin: 10px 0;
-    font-size: 20px;
-    color: #6b4f3a;
-}
-
-/* Profile Actions */
-.profile-actions {
-    margin-top: 30px;
-}
-
-.profile-actions .button {
-    all: unset;
-    display: inline-block;
-    padding: 20px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 7px;
-    cursor: pointer;
-    background: radial-gradient(
-        ellipse at bottom,
-        rgba(111, 78, 55, 1) 0%,
-        rgba(78, 52, 36, 1) 45%
-    );
-    color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-    margin: 10px;
-}
-
-.profile-actions .button:hover {
-    transform: scale(1.05) translateY(-2px);
-    color: #fff;
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .profile-container {
-        width: 100%;
-        min-width: auto;
-    }
-    .profile-header h1 {
-        font-size: 28px;
-    }
-    .profile-info h2 {
-        font-size: 28px;
-    }
-    .profile-info p {
-        font-size: 18px;
-    }
-}
-
-/*------------------------------------------------------------*/
-
-
-/* ------tables.css------ */
-
-body {
-    background-color: white;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center everything inside */
-}
-
-h1 {
-    color: #6d5353;
-    font-weight: bold;
-    text-align: center; /* Ensures text itself is centered */
-    margin-top: 50px; /* Adds spacing above */
-    margin-bottom: 40px; /* Adds spacing below */
-}
-
-.tables-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-template-rows: repeat(3, auto);   /* 3 rows */
-    grid-gap: 15px;
-    width: 80vw;  /* Adjust width to avoid excessive size */
-    max-width: 600px; /* Limit max width */
-    padding: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+.btn-outline-brown {
+    --bs-btn-color: var(--bs-outline-brown); /* Text color */
+    --bs-btn-border-color: var(--bs-outline-brown); /* Border color */
+    --bs-btn-hover-color: var(--bs-outline-brown); /* Hover text color */
     
 }
-
-.table {
-    width: 375px;  /* Fixed width */
-    height: 160px; /* Fixed height */
-    background-color: #705b4b;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
+.btn-outline-brown{
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+.btn-outline-brown:hover{
+    background-image: linear-gradient(to right, #735a2c 0%, #56361b  51%, #968154  100%);
     color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.table:hover {
-    background-color: #ddd;
-    color: black;
-}
+.btn-outline-brown:active {
+    background-image: linear-gradient(to right, #9c8165 0%, #332516 51%, #8d6e4d 100%);  /* Active background */
+   color: #fff !important;  /* Active text color set to white */
+ }
 
-.table.occupied {
-    background-color: #ff6b6b;
-}
+.btn-solid-brown {
+   background-image: linear-gradient(to right, #735a2c 0%, #56361b  51%, #968154  100%);
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   display: block;
+ }
 
-.table.available {
-    background-color: #6bff6b;
-}
+ .btn-solid-brown:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .btn-solid-brown:active {
+    background-image: linear-gradient(to right, #9c8165 0%, #332516 51%, #8d6e4d 100%);  /* Active background */
+   color: #fff !important;  /* Active text color set to white */
+ }
+
