@@ -26,7 +26,7 @@ function loadPage(page) {
       document.getElementById('page-content').innerHTML = data;
 
       // Update the browser's URL without reloading the page
-      history.pushState({ page: page }, '', page);
+      // history.pushState({ page: page }, '', page);
 
     })
     .catch(error => console.error('Error loading page:', error));
@@ -40,7 +40,7 @@ window.onload = function() {
 };
 
 // Handle back and forward navigation in the browser
-window.addEventListener('popstate', function(event) {
-  const page = window.location.pathname.replace('/', ''); // Get the current page from the URL
-  loadPage(page); // Load the page based on the URL
-});
+// window.addEventListener('popstate', function(event) {
+//   const page = window.location.pathname.replace('/', ''); // Get the current page from the URL
+//   loadPage(page); // Load the page based on the URL
+// });
