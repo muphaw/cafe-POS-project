@@ -4,75 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Cards</title>
-    <link rel="stylesheet" href="main.css">  <!-- Corrected to main.css -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Table Availability</h1>
 
-    
-    <div style="display: flex; justify-content: center; align-items: center;">
-        <h1>Table Availability</h1>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Repeat this card for each table -->
+            <div class="col">
+                <div class="card table-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Table A</h5>
+                        <div class="btn-group-vertical w-100">
+                            <button class="btn btn-success available-btn">
+                                Available
+                            </button>
+                            <button class="btn btn-danger unavailable-btn">
+                                Unavailable
+                            </button>
+                        </div>
+                        <p class="card-text mt-3 mb-0">
+                            Status: <span class="status-text">Not selected</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card table-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Table B</h5>
+                        <div class="btn-group-vertical w-100">
+                            <button class="btn btn-success available-btn">
+                                Available
+                            </button>
+                            <button class="btn btn-danger unavailable-btn">
+                                Unavailable
+                            </button>
+                        </div>
+                        <p class="card-text mt-3 mb-0">
+                            Status: <span class="status-text">Not selected</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card table-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Table C</h5>
+                        <div class="btn-group-vertical w-100">
+                            <button class="btn btn-success available-btn">
+                                Available
+                            </button>
+                            <button class="btn btn-danger unavailable-btn">
+                                Unavailable
+                            </button>
+                        </div>
+                        <p class="card-text mt-3 mb-0">
+                            Status: <span class="status-text">Not selected</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card table-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Table D</h5>
+                        <div class="btn-group-vertical w-100">
+                            <button class="btn btn-success available-btn">
+                                Available
+                            </button>
+                            <button class="btn btn-danger unavailable-btn">
+                                Unavailable
+                            </button>
+                        </div>
+                        <p class="card-text mt-3 mb-0">
+                            Status: <span class="status-text">Not selected</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card table-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Table E</h5>
+                        <div class="btn-group-vertical w-100">
+                            <button class="btn btn-success available-btn">
+                                Available
+                            </button>
+                            <button class="btn btn-danger unavailable-btn">
+                                Unavailable
+                            </button>
+                        </div>
+                        <p class="card-text mt-3 mb-0">
+                            Status: <span class="status-text">Not selected</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card table-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Table F</h5>
+                        <div class="btn-group-vertical w-100">
+                            <button class="btn btn-success available-btn">
+                                Available
+                            </button>
+                            <button class="btn btn-danger unavailable-btn">
+                                Unavailable
+                            </button>
+                        </div>
+                        <p class="card-text mt-3 mb-0">
+                            Status: <span class="status-text">Not selected</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card table-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Table G</h5>
+                        <div class="btn-group-vertical w-100">
+                            <button class="btn btn-success available-btn">
+                                Available
+                            </button>
+                            <button class="btn btn-danger unavailable-btn">
+                                Unavailable
+                            </button>
+                        </div>
+                        <p class="card-text mt-3 mb-0">
+                            Status: <span class="status-text">Not selected</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card table-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Table H</h5>
+                        <div class="btn-group-vertical w-100">
+                            <button class="btn btn-success available-btn">
+                                Available
+                            </button>
+                            <button class="btn btn-danger unavailable-btn">
+                                Unavailable
+                            </button>
+                        </div>
+                        <p class="card-text mt-3 mb-0">
+                            Status: <span class="status-text">Not selected</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
 
-    <div class="table-container">
-        <!-- Cards for tables A to I -->
-        <div class="table-card" id="tableA">
-            <h3>Table A</h3>
-            <button class="available-btn">Available</button>
-            <button class="unavailable-btn">Unavailable</button>
-            <p>Status: <span>Not selected</span></p>
-        </div>
-        <div class="table-card" id="tableB">
-            <h3>Table B</h3>
-            <button class="available-btn">Available</button>
-            <button class="unavailable-btn">Unavailable</button>
-            <p>Status: <span>Not selected</span></p>
-        </div>
-        <div class="table-card" id="tableC">
-            <h3>Table C</h3>
-            <button class="available-btn">Available</button>
-            <button class="unavailable-btn">Unavailable</button>
-            <p>Status: <span>Not selected</span></p>
-        </div>
-        <div class="table-card" id="tableD">
-            <h3>Table D</h3>
-            <button class="available-btn">Available</button>
-            <button class="unavailable-btn">Unavailable</button>
-            <p>Status: <span>Not selected</span></p>
-        </div>
-        <div class="table-card" id="tableE">
-            <h3>Table E</h3>
-            <button class="available-btn">Available</button>
-            <button class="unavailable-btn">Unavailable</button>
-            <p>Status: <span>Not selected</span></p>
-        </div>
-        <div class="table-card" id="tableF">
-            <h3>Table F</h3>
-            <button class="available-btn">Available</button>
-            <button class="unavailable-btn">Unavailable</button>
-            <p>Status: <span>Not selected</span></p>
-        </div>
-        <div class="table-card" id="tableG">
-            <h3>Table G</h3>
-            <button class="available-btn">Available</button>
-            <button class="unavailable-btn">Unavailable</button>
-            <p>Status: <span>Not selected</span></p>
-        </div>
-        <div class="table-card" id="tableH">
-            <h3>Table H</h3>
-            <button class="available-btn">Available</button>
-            <button class="unavailable-btn">Unavailable</button>
-            <p>Status: <span>Not selected</span></p>
-        </div>
-        <div class="table-card" id="tableI">
-            <h3>Table I</h3>
-            <button class="available-btn">Available</button>
-            <button class="unavailable-btn">Unavailable</button>
-            <p>Status: <span>Not selected</span></p>
-        </div>
-    </div>
-
-    <!-- Include your main.js script -->
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

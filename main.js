@@ -46,57 +46,28 @@ window.onload = function() {
 // });
 /*for table availability*/
 
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("JavaScript file is running...");
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('.table-card').forEach(card => {
+      const availableBtn = card.querySelector('.available-btn');
+      const unavailableBtn = card.querySelector('.unavailable-btn');
+      const statusText = card.querySelector('.status-text');
 
-  const tables = document.querySelectorAll(".table");
+      // Handle Available Button
+      availableBtn.addEventListener('click', () => {
+          statusText.textContent = 'Available';
+          statusText.className = 'status-text status-available'; // Reset classes
+          availableBtn.classList.add('active');
+          unavailableBtn.classList.remove('active');
+      });
 
-  tables.forEach(table => {
-      table.addEventListener("click", function () {
-          console.log("Clicked:", this.innerText);
-
-          this.classList.toggle("available");
-          console.log(this.innerText + " classList:", this.classList);
+      // Handle Unavailable Button
+      unavailableBtn.addEventListener('click', () => {
+          statusText.textContent = 'Unavailable';
+          statusText.className = 'status-text status-unavailable'; // Reset classes
+          unavailableBtn.classList.add('active');
+          availableBtn.classList.remove('active');
       });
   });
-});
-
-// Function to toggle the status of the table
-document.addEventListener('DOMContentLoaded', function () {
-  // Select all available and unavailable buttons
-  const availableButtons = document.querySelectorAll('.available-btn');
-  const unavailableButtons = document.querySelectorAll('.unavailable-btn');
-
-  // Add event listeners to available buttons
-  availableButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-          toggleStatus(button, 'available');
-      });
-  });
-
-  // Add event listeners to unavailable buttons
-  unavailableButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-          toggleStatus(button, 'unavailable');
-      });
-  });
-
-  // Toggle status between available and unavailable
-  function toggleStatus(button, status) {
-      // Find the card that the button belongs to
-      const card = button.closest('.table-card');
-      
-      // Disable the opposite button and activate the clicked one
-      if (status === 'available') {
-          card.querySelector('.available-btn').classList.add('active');
-          card.querySelector('.unavailable-btn').classList.remove('active');
-          card.querySelector('p span').textContent = 'Available';
-      } else {
-          card.querySelector('.unavailable-btn').classList.add('active');
-          card.querySelector('.available-btn').classList.remove('active');
-          card.querySelector('p span').textContent = 'Unavailable';
-      }
-  }
 });
 
 /*profile*/
