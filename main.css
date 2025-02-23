@@ -90,6 +90,7 @@
    color: #fff !important;  /* Active text color set to white */
  }
 
+
  /* Radio button checked state - Target label when radio button is checked */
 .btn-check:checked + .btn-outline-brown {
     background-image: linear-gradient(to right, #735a2c 0%, #56361b 51%, #968154 100%);
@@ -186,87 +187,33 @@ body {
 
 
 /* profile page */
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+
+/* Reset default margin and padding, and set a light background */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  /* Center the profile card on the page */
+  .profile-card {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-.profile-pic {
-    width: 120px;
-    height: 120px;
+    padding: 20px;
+  }
+  
+  /* Style for the profile photo */
+  .profile-photo {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: 3px solid #333;
-    margin-bottom: 10px;
-}
-
-button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-.login-btn {
-    background-color: #00df30;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.logout-btn {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-
-/* ------------------ */
-
-.available-btn {
-    background-color: #28a745; /* Green */
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100px;
-    font-size: 14px;
-}
-
-.unavailable-btn {
-    background-color: #dc3545; /* Red */
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100px;
-    font-size: 14px;
-}
-
-.available-btn.active {
-    background-color: #08d33b; /* Darker Green */
-}
-
-.unavailable-btn.active {
-    background-color: #c82333; /* Darker Red */
-}
+    object-fit: cover;
+    border: 3px solid #6f4e37;
+  }
+  
+ 
