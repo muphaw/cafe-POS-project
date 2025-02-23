@@ -47,27 +47,27 @@ window.onload = function() {
 /*for table availability*/
 
 document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll('.table-card').forEach(card => {
-      const availableBtn = card.querySelector('.available-btn');
-      const unavailableBtn = card.querySelector('.unavailable-btn');
-      const statusText = card.querySelector('.status-text');
+    document.querySelectorAll('.table-card').forEach(card => {
+        const availableBtn = card.querySelector('.available-btn');
+        const unavailableBtn = card.querySelector('.unavailable-btn');
+        const statusText = card.querySelector('.status-text');
 
-      // Handle Available Button
-      availableBtn.addEventListener('click', () => {
-          statusText.textContent = 'Available';
-          statusText.className = 'status-text status-available'; // Reset classes
-          availableBtn.classList.add('active');
-          unavailableBtn.classList.remove('active');
-      });
+        // Handle Available Button
+        availableBtn.addEventListener('click', () => {
+            statusText.textContent = 'Available';
+            statusText.className = 'status-text status-available'; // Reset classes
+            availableBtn.classList.add('active');
+            unavailableBtn.classList.remove('active');
+        });
 
-      // Handle Unavailable Button
-      unavailableBtn.addEventListener('click', () => {
-          statusText.textContent = 'Unavailable';
-          statusText.className = 'status-text status-unavailable'; // Reset classes
-          unavailableBtn.classList.add('active');
-          availableBtn.classList.remove('active');
-      });
-  });
+        // Handle Unavailable Button
+        unavailableBtn.addEventListener('click', () => {
+            statusText.textContent = 'Unavailable';
+            statusText.className = 'status-text status-unavailable'; // Reset classes
+            unavailableBtn.classList.add('active');
+            availableBtn.classList.remove('active');
+        });
+    });
 });
 
 /*profile*/
