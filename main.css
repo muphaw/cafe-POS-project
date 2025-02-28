@@ -90,6 +90,36 @@
    color: #fff !important;  /* Active text color set to white */
  }
 
+ h1,h2,h3,h4,h5 {
+    color : #382510;
+ }
+ .text-brown{
+    color : #382510;
+ }
+ .icon-bg{
+    background-color: #efe8c7;
+ }
+ .icon-purple-bg{
+    background-color: plum;
+ }
+ .icon-purple{
+    color: purple;
+ }
+ .icon-green{
+    color: rgb(13, 154, 13)
+ }
+ .icon-green-bg{
+    background-color: rgb(197, 250, 197);
+ }
+ .icon-red-bg{
+    background-color: rgb(244, 202, 202);
+ }
+ .icon-brown{
+    color: #4b442e;
+ }
+.text-green{
+    color: rgb(49, 209, 49);
+}
  /* Radio button checked state - Target label when radio button is checked */
 .btn-check:checked + .btn-outline-brown {
     background-image: linear-gradient(to right, #735a2c 0%, #56361b 51%, #968154 100%);
@@ -118,5 +148,45 @@
  }
 
 .card-bg-brown{
-    background-color:#c8c5be;
+    background-color:#dfbd6f;
+}
+.card-brown{
+    border: 1px solid var(--bd-outline-hover-bg);
+    background-color: rgb(255, 253, 243)
+}
+.chart-container {
+    width: 100%;
+    height: 280px;
+    /* position: relative; */
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.line {
+    fill: none;
+    stroke: #3498db;
+    stroke-width: 2;
+}
+
+.axis {
+    fill: none;
+    stroke: #1baff9;
+    stroke-width: 2;
+}
+
+.grid {
+    fill: none;
+    stroke: #9f1010;
+    stroke-width: 1;
+    stroke-dasharray: 5, 5;
+}
+
+.x-label {
+    font-size: 14px;
+    text-anchor: middle;
 }
