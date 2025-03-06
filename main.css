@@ -32,8 +32,8 @@
 }
 
 .card:hover {
-    transform: scale(1.02); /* Makes the card slightly larger */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+    transform: scale(1.02); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 :root {
@@ -56,11 +56,9 @@
     --bs-outline-brown: #2f1f19; /* brown color for text */
 }
 
-
-/* Custom Button Styles using CSS Variables */
 .btn-brown {
-    --bs-btn-hover-bg: var(--bd-hover-bg); 
-    --bs-btn-hover-border-color: var(--bd-hover-bg); 
+    --bs-btn-hover-bg: var(--bd-hover-bg); // Hover background
+    --bs-btn-hover-border-color: var(--bd-hover-bg); // Hover border
     --bs-btn-focus-shadow-rgb: 255, 255, 255; /* Focus shadow color */
     --bs-btn-active-color: var(--bs-brown); /* Active text color */
     --bs-btn-active-bg: var(--bd-active-bg); /* Active background */
@@ -86,16 +84,45 @@
 }
 
 .btn-outline-brown:active {
-    background-image: linear-gradient(to right, #9c8165 0%, #332516 51%, #8d6e4d 100%);  /* Active background */
-   color: #fff !important;  /* Active text color set to white */
+    background-image: linear-gradient(to right, #9c8165 0%, #332516 51%, #8d6e4d 100%); 
+   color: #fff !important;  
  }
 
-
+ h1,h2,h3,h4,h5 {
+    color : #382510;
+ }
+ .text-brown{
+    color : #382510;
+ }
+ .icon-bg{
+    background-color: #efe8c7;
+ }
+ .icon-purple-bg{
+    background-color: plum;
+ }
+ .icon-purple{
+    color: purple;
+ }
+ .icon-green{
+    color: rgb(13, 154, 13)
+ }
+ .icon-green-bg{
+    background-color: rgb(197, 250, 197);
+ }
+ .icon-red-bg{
+    background-color: rgb(244, 202, 202);
+ }
+ .icon-brown{
+    color: #4b442e;
+ }
+.text-green{
+    color: rgb(49, 209, 49);
+}
  /* Radio button checked state - Target label when radio button is checked */
 .btn-check:checked + .btn-outline-brown {
     background-image: linear-gradient(to right, #735a2c 0%, #56361b 51%, #968154 100%);
-    color: white; /* Text color when checked */
-    border-color: #735a2c; /* Border color when checked */
+    color: white;
+    border-color: #735a2c; 
 }
 
 
@@ -114,25 +141,58 @@
  }
 
  .btn-solid-brown:active {
-    background-image: linear-gradient(to right, #9c8165 0%, #332516 51%, #8d6e4d 100%);  /* Active background */
-   color: #fff !important;  /* Active text color set to white */
+    background-image: linear-gradient(to right, #9c8165 0%, #332516 51%, #8d6e4d 100%); 
+   color: #fff !important;  
  }
 
 .card-bg-brown{
-    background-color:#c8c5be;
+    background-color:#dfbd6f;
+}
+.card-brown{
+    border: 1px solid var(--bd-outline-hover-bg);
+    background-color: rgb(255, 253, 243)
+}
+.chart-container {
+    width: 100%;
+    height: 280px;
 }
 
-/* Styling for the Tables page */
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f5f5f5;
+svg {
+    width: 100%;
+    height: 100%;
+    padding: 0;
     margin: 0;
-    padding: 20px;
 }
 
-/* Table Container */
+.line {
+    fill: none;
+    stroke: #3498db;
+    stroke-width: 2;
+}
+
+.axis {
+    fill: none;
+    stroke: #1baff9;
+    stroke-width: 2;
+}
+
+.grid {
+    fill: none;
+    stroke: #9f1010;
+    stroke-width: 1;
+    stroke-dasharray: 5, 5;
+}
+
+.x-label {
+    font-size: 14px;
+    text-anchor: middle;
+}
+
+.nav-link.active {
+    background-image: linear-gradient(to right, #9c8165 0%, #8d6e4d 51%, #8d6e4d 100%); 
+   color: #fff !important;  
+   border: none;
+}
 .table-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -141,7 +201,6 @@ body {
     margin: auto;
 }
 
-/* Table Card */
 .table-card {
     background-color: #fff;
     padding: 15px;
@@ -155,8 +214,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Button Styles */
-/* Custom Styles */
 .table-card {
     transition: transform 0.2s ease;
 }
@@ -185,21 +242,10 @@ body {
     color: #dc3545 !important;
 }
 
-
-/* profile page */
-
-/* Reset default margin and padding, and set a light background */
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-  }
-  
-  /* Center the profile card on the page */
   .profile-card {
     width: 90%;
-    max-width: 600px;
-    margin: 50px auto;
+    max-width: 500px;
+    margin: 10px auto;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -207,7 +253,6 @@ html, body {
     padding: 20px;
   }
   
-  /* Style for the profile photo */
   .profile-photo {
     width: 200px;
     height: 200px;
@@ -216,4 +261,5 @@ html, body {
     border: 3px solid #6f4e37;
   }
   
- 
+
+  
